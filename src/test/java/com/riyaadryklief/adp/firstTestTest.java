@@ -14,7 +14,12 @@ public class firstTestTest {
 
     firstTest test = new firstTest("Riyaad", "Ryklief");
     firstTest test2 = new firstTest("Frank","AB");
-
+    
+    @Test
+    public void failMethod(){
+        fail("Yes, this is a fail");
+    }
+    
     //Name method test
     @Test (timeout = 1)
     public void getName() throws Exception {
