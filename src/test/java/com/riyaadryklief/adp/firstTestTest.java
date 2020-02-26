@@ -42,7 +42,14 @@ public class firstTestTest {
         assertFalse(test.notEqual());
         assertFalse(test2.notEqual());
     }
+    
+    @Test
+    public void testTrue () throws  Exception{
 
+        assertTrue(test.getName() != test2.getName());
+        assertTrue(test.getSurname() != test2.getSurname());
+    }
+    
     @Test (timeout = 1)
     public void testIfSame() throws Exception {
         assertNotSame(test,test2);
